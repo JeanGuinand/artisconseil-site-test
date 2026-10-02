@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artis Conseil — Conseil · Transformation · Intelligence Artificielle</title>
+<meta name="description" content="Artis Conseil accompagne les dirigeants de PME et ETI dans leurs projets de transformation, performance, Data et Intelligence Artificielle. Nouveau site en cours de développement.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#040b18">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    min-height: 100vh;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background:
+      radial-gradient(circle at 80% 20%, rgba(0,153,200,.16), transparent 35%),
+      radial-gradient(circle at 15% 80%, rgba(14,106,149,.14), transparent 32%),
+      linear-gradient(135deg, #040b18 0%, #07172a 55%, #0b2238 100%);
+    color: #fff;
+  }
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 42px clamp(24px, 6vw, 90px) 30px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    width: fit-content;
+  }
+  .logo-icon { width: 38px; height: 38px; flex: 0 0 auto; }
+  .brand-name {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -.5px;
+  }
+  .main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+  }
+  .content { max-width: 880px; }
+  .eyebrow {
+    display: inline-block;
+    color: #62d8f5;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  h1 {
+    margin: 0;
+    max-width: 850px;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -.045em;
+    font-weight: 650;
+  }
+  .accent { color: #43c9ec; }
+  .lead {
+    margin: 30px 0 0;
+    max-width: 760px;
+    color: #c8d5e3;
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.65;
+  }
+  .status {
+    margin-top: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    padding: 12px 18px;
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 999px;
+    background: rgba(255,255,255,.055);
+    color: #eaf5fa;
+    font-size: 14px;
+  }
+  .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: #43c9ec;
+    box-shadow: 0 0 16px rgba(67,201,236,.8);
+  }
+  .contact {
+    margin-top: 42px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    max-width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+    color: #9fb3c7;
+    font-size: 15px;
+  }
+  .contact a { color: #fff; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    color: #70869b;
+    font-size: 13px;
+  }
+  @media (max-width: 640px) {
+    .page { padding-top: 28px; }
+    .main { padding: 55px 0; }
+    h1 { font-size: 43px; }
+    .lead { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="brand" aria-label="Artis Conseil">
+      <svg class="logo-icon" viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="2" y="28" width="11" height="18" rx="2" fill="#123452"/>
+        <rect x="18" y="16" width="11" height="30" rx="2" fill="#0e6a95"/>
+        <rect x="34" y="4" width="11" height="42" rx="2" fill="#00b9e5"/>
+      </svg>
+      <span class="brand-name">Artis Conseil</span>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="content">
+      <span class="eyebrow">Conseil · Transformation · Intelligence Artificielle</span>
+      <h1>Transformer vos enjeux en <span class="accent">leviers de performance.</span></h1>
+      <p class="lead">
+        Artis Conseil accompagne les dirigeants de PME et ETI dans leurs projets
+        de transformation, de performance, de Data et d'Intelligence Artificielle.
+        Notre nouveau site est actuellement en cours de développement.
+      </p>
+
+      <div class="status"><span class="dot"></span>Nouveau site prochainement disponible</div>
+
+      <div class="contact">
+        <span>Pour échanger dès maintenant :</span>
+        <a href="mailto:jp.guinand@artisconseil.com">jp.guinand@artisconseil.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Artis Conseil — Tous droits réservés.</span>
+    <span>Stratégie · Performance · IA — Lyon &amp; à distance</span>
+  </footer>
+</div>
+</body>
+</html>
