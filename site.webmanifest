@@ -1,0 +1,13 @@
+{
+  "name": "Artis Conseil — Conseil IA & Transformation PME/ETI",
+  "short_name": "Artis Conseil",
+  "description": "Cabinet de conseil en transformation, performance, Data et Intelligence Artificielle pour dirigeants de PME et ETI.",
+  "lang": "fr-FR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

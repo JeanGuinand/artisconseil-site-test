@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IA pour Finance &amp; gestion en PME - Applications | Artis Conseil</title>
+<meta name="description" content="Fiabiliser les analyses, anticiper la trésorerie et produire le reporting en quelques minutes.">
+<link rel="canonical" href="https://www.artisconseil.com/applications/finance-gestion.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#07111f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Artis Conseil">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="IA pour Finance &amp; gestion en PME - Applications | Artis Conseil">
+<meta property="og:description" content="Fiabiliser les analyses, anticiper la trésorerie et produire le reporting en quelques minutes.">
+<meta property="og:url" content="https://www.artisconseil.com/applications/finance-gestion.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.artisconseil.com/"}, {"@type": "ListItem", "position": 2, "name": "Applications", "item": "https://www.artisconseil.com/applications.html"}, {"@type": "ListItem", "position": 3, "name": "Finance & gestion", "item": "https://www.artisconseil.com/applications/finance-gestion.html"}]}</script>
+<style>
+/* Page de service : sous-titre à gauche, bloc à droite (trait vertical bleu = bordure du bloc), tout sur un écran */
+.breadcrumb { padding: 8px 0; }
+.hero--inner { padding: 16px 0 24px; }
+.hero--inner .hero__eyebrow { margin-bottom: 6px; }
+.hero--inner .hero__title { font-size: clamp(30px, 3.2vw, 42px); margin-bottom: 14px; }
+.svc-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
+.svc-top .hero__eyebrow { margin-bottom: 0; }
+.svc-top .svc-back { padding: 7px 16px; font-size: 13.5px; }
+.svc-intro { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); align-items: start; }
+.svc-intro .hero__subtitle { max-width: none; margin: 0; font-size: 19px; line-height: 1.55; }
+.svc-intro .callout { margin: 0; padding: 14px 20px; }
+.svc-intro .callout ul { gap: 7px !important; }
+@media (max-width: 900px) {
+  .svc-intro { grid-template-columns: 1fr; gap: var(--space-md); }
+  .svc-intro .hero__subtitle { font-size: var(--text-h4); }
+  .hero--inner { padding: 14px 0 20px; }
+}
+/* Titres intermédiaires de la page : même taille partout (hors titre principal et bloc « Passer à l'action ») */
+main > section:not(.a6) .section-title { font-size: var(--text-h3); }
+/* « Comprendre la performance sur le moyen terme » et « Piloter la performance au fil de l'eau » : chaque étape en bandeau vertical (action en haut, livrables dessous), remplissage homogène */
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fstep { grid-template-columns: 1fr; gap: 0; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fhead { display: grid; grid-template-columns: 330px 1fr; column-gap: 28px; row-gap: 6px; align-items: center; border-radius: var(--radius-md) var(--radius-md) 0 0; padding: 14px 20px; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fhead__top { grid-column: 1; grid-row: 1; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fhead h3 { grid-column: 1; grid-row: 2; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fhead p { grid-column: 2; grid-row: 1 / span 2; font-size: 13px; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fhead__hint { grid-column: 2; grid-row: 3; margin-top: 4px; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fout { border-top: 0; border-radius: 0 0 var(--radius-md) var(--radius-md); padding: 12px 20px; display: grid; grid-template-columns: 150px 1fr; column-gap: 20px; align-items: center; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fout__lab { margin: 0; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fout .uc-outs { margin: 0 !important; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fout:has(.uc-rfam) { grid-template-columns: 1fr; row-gap: 10px; align-items: start; }
+:is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-rfam { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 0; }
+@media (max-width: 900px) {
+  :is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fhead { grid-template-columns: 1fr; padding: 14px 16px; }
+  :is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fhead p, :is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fhead__hint { grid-column: 1; grid-row: auto; }
+  :is(#visuel-analyse-historique, #visuel-pilotage-recurrent) .uc-fout { grid-template-columns: 1fr; row-gap: 8px; padding: 12px 16px; align-items: start; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="header-main">
+  <a class="header-main__brand" href="../index.html" aria-label="Artis Conseil - accueil"><span class="logo"><svg class="logo__icon" width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="28" width="11" height="18" rx="2" fill="#0e6a95"/><rect x="18" y="16" width="11" height="30" rx="2" fill="#0099c8"/><rect x="34" y="4" width="11" height="42" rx="2" fill="#00b9e5"/></svg><span><span class="logo__word"><span class="a">A</span><span class="rest">rt</span><span class="i">&#305;</span><span class="rest">s&nbsp;Conseil</span></span></span></span></a>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+  <nav class="header-main__nav" id="site-nav" aria-label="Navigation principale">
+    <div class="header-main__item has-caret">
+      <a class="header-main__link" href="../index.html">Services</a>
+      <div class="dropdown"><a class="dropdown__link" href="../index.html">Accueil</a><a class="dropdown__link" href="../index.html#parcours">Opportunités IA</a><a class="dropdown__link" href="../index.html#shadow-ai">Constats en entreprise</a><a class="dropdown__link" href="../index.html#trame">Notre proposition</a><a class="dropdown__link" href="../index.html#distinction">Notre approche</a><a class="dropdown__link" href="../index.html#commencer">Passer à l'action</a></div>
+    </div>
+    <div class="header-main__item has-caret">
+      <a class="header-main__link" href="../maturite-ia.html">Méthodes</a>
+      <div class="dropdown dropdown--wide">
+        <a class="dropdown__link" href="../co-construction-solution-ia.html">Notre méthode<span>Co-construire une solution IA avec votre entreprise</span></a>
+        <a class="dropdown__link" href="../data-ia.html">DATA &amp; IA<span>Identifier, préparer et fiabiliser les données du projet</span></a>
+        <a class="dropdown__link" href="../problematiques-metiers.html">Enjeux métier<span>Repérer les processus à améliorer et les cas d’usage prioritaires</span></a>
+        <a class="dropdown__link" href="../designer-process-IA.html">Designer le processus IA<span>Concevoir l’intégration de l’IA dans les processus métier</span></a>
+        <a class="dropdown__link" href="../maturite-ia.html">Maturité IA<span>Adapter le niveau d’IA aux besoins et aux capacités de l’entreprise</span></a>
+        <a class="dropdown__link" href="../calculer-roi-projet-ia.html">Coûts &amp; ROI<span>Estimer les coûts, les gains attendus et le retour sur investissement</span></a>
+      </div>
+    </div>
+    <div class="header-main__item has-caret">
+      <a class="header-main__link" href="../applications.html" aria-current="page">Applications</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="../applications.html#par-service">Par service</a>
+        <a class="dropdown__link" href="../applications.html#par-cas-usage">Par cas d’usage</a>
+        <a class="dropdown__link" href="../applications.html#par-processus">Par processus</a>
+      </div>
+    </div>
+    <div class="header-main__item"><a class="header-main__link" href="../a-propos.html">À propos</a></div>
+    <div class="header-main__item"><a class="header-main__link" href="../ressources.html">Ressources</a></div>
+    <div class="header-main__actions">
+      <a class="btn-secondary" href="../contact.html">Échanger sur vos enjeux</a>
+    </div>
+  </nav>
+</header>
+<div class="section-white"><div class="container-lg"><nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a><span class="sep">/</span><a href="../applications.html">Applications</a><span class="sep">/</span><span aria-current="page">Finance &amp; gestion</span></nav></div></div>
+<main id="main">
+<section class="hero hero--inner">
+    <div class="container-lg">
+      <div class="svc-top"><span class="eyebrow hero__eyebrow">Applications · Finance &amp; gestion</span><a class="btn-ghost svc-back" href="../applications.html#par-service"><span aria-hidden="true">←</span> Tous les services</a></div>
+      <h1 class="hero__title">Finance & gestion</h1>
+      <div class="svc-intro">
+        <p class="hero__subtitle">La finance consacre trop de temps à collecter et mettre en forme des chiffres. L'IA automatise l'analyse des résultats, anticipe la trésorerie, détecte les anomalies et prépare un reporting commenté - la fonction retrouve du temps pour l'analyse et le conseil au dirigeant.</p>
+        <div class="callout"><h2 class="callout__title">Irritants fréquents</h2><ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:10px"><li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--ac-col-10);flex-shrink:0;margin-top:2px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg></span><span>Clôtures et reporting longs et manuels</span></li><li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--ac-col-10);flex-shrink:0;margin-top:2px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg></span><span>Prévisions de trésorerie fragiles</span></li><li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--ac-col-10);flex-shrink:0;margin-top:2px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg></span><span>Anomalies détectées trop tard</span></li><li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--ac-col-10);flex-shrink:0;margin-top:2px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg></span><span>Analyses d'écarts répétitives</span></li></ul></div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-alt">
+    <div class="container-lg">
+      <div class="section-head"><h2 class="section-title">Cas d'usage prioritaires</h2><p class="section-subtitle">Les applications à plus forte valeur pour finance & gestion.</p></div>
+      <div class="grid-3"><article class="card card--hover usecase">
+      <span class="usecase__tag">Finance</span>
+      <h3 class="usecase__title">Analyse automatique des résultats financiers</h3>
+      <div class="usecase__meta"><span>Valeur&nbsp;: <b>Élevé</b></span><span>Complexité&nbsp;: <b>Faible</b></span></div>
+      <a class="stretched" href="analyse-resultats-financiers.html" aria-label="Analyse automatique des résultats financiers"></a>
+    </article><article class="card card--hover usecase">
+      <span class="usecase__tag">Direction</span>
+      <h3 class="usecase__title">Reporting dirigeant automatisé</h3>
+      <div class="usecase__meta"><span>Valeur&nbsp;: <b>Élevé</b></span><span>Complexité&nbsp;: <b>Faible</b></span></div>
+      <a class="stretched" href="reporting-dirigeant.html" aria-label="Reporting dirigeant automatisé"></a>
+    </article><article class="card card--hover usecase">
+      <span class="usecase__tag">Transverse</span>
+      <h3 class="usecase__title">Assistant documentaire (RAG)</h3>
+      <div class="usecase__meta"><span>Valeur&nbsp;: <b>Élevé</b></span><span>Complexité&nbsp;: <b>Faible</b></span></div>
+      <a class="stretched" href="assistant-documentaire.html" aria-label="Assistant documentaire (RAG)"></a>
+    </article></div>
+    </div>
+  </section>
+  <section id="visuel-rentabilite-affaires" class="section section-white article">
+    <div class="container-lg">
+      <div class="section-head"><span class="eyebrow">Cas d'usage · Finance / Contrôle de gestion</span><h2 class="section-title">Connaître la marge, dossier par dossier</h2>
+        <p class="section-subtitle">Consolider les coûts prévus et réalisés, calculer la marge de chaque affaire et mesurer les écarts - pour piloter la rentabilité au bon niveau.</p></div>
+      <div class="uc-visual"><div class="uc-steps uc-steps--4"><div class="uc-step"><span class="uc-step__nat uwho--calc">Programme</span><span class="uc-step__n">1</span><h3 class="uc-step__t">Consolider les coûts</h3><p class="uc-step__d">Matières et temps par dossier, en prévu (chiffrage) et en réalisé (production).</p></div><div class="uc-step"><span class="uc-step__nat uwho--calc">Programme</span><span class="uc-step__n">2</span><h3 class="uc-step__t">Calculer la marge par dossier</h3><p class="uc-step__d">CA moins coût de revient - règles co-construites avec le contrôle de gestion.</p></div><div class="uc-step"><span class="uc-step__nat uwho--calc">Programme</span><span class="uc-step__n">3</span><h3 class="uc-step__t">Mesurer les écarts</h3><p class="uc-step__d">Écarts prévu / réalisé : heures, volumes, matières, via l'historisation.</p></div><div class="uc-step"><span class="uc-step__nat uwho--tpl">Restitution</span><span class="uc-step__n">4</span><h3 class="uc-step__t">Restituer le tableau de bord</h3><p class="uc-step__d">Rentabilité et classement des dossiers / clients par marge.</p></div></div><div class="uc-outs"><span class="uc-outs__lab">Sorties</span><span class="uc-out">marge par dossier</span><span class="uc-out">écarts prévu / réalisé</span><span class="uc-out">dossiers à faible marge</span></div><div class="uc-valid"><div class="uc-valid__c"><b>Expertise métier & contrôle de gestion</b><span>les règles de marge et le coût de revient, co-construits et validés par le dirigeant.</span></div><div class="uc-valid__p">+</div><div class="uc-valid__c"><b>Expertise IA & data</b><span>la consolidation automatique des coûts prévus / réalisés et le calcul des écarts, exacts et auditables.</span></div></div></div>
+    </div>
+  </section><section id="visuel-analyse-historique" class="section section-alt article">
+    <div class="container-lg">
+      <div class="section-head"><span class="eyebrow">Cas d'usage · Finance / Contrôle de gestion</span><h2 class="section-title">Comprendre la performance sur le moyen terme</h2>
+        <p class="section-subtitle">Analyser le compte de résultat et le bilan sur 3 à 5 ans pour lire l'histoire de l'entreprise à travers ses résultats passés - du FEC au commentaire financier.</p></div>
+      <div class="uc-visual"><div class="uc-meta"><span>Pour : dirigeant & contrôle de gestion</span><span>Horizon : 3 à 5 derniers exercices</span><span>But : lire l'histoire par les résultats</span></div><div class="uc-src"><span class="uc-src__lab">Sources en entrée</span><div><span>Comptes de résultat</span><span>Bilans</span><span>Fichier FEC / Grand Livre</span></div></div><h3 class="uc-subh">Le processus en 5 étapes</h3><div class="uc-fpipe"><div class="uc-fstep"><div class="uc-fhead s1"><div class="uc-fhead__top"><span class="uc-fhead__n">1</span><span class="uc-fhead__nat">Programme · ETL</span></div><h3>Extraction, contrôle & structuration</h3><p>FEC / Grand Livre extraits par ETL / Python, contrôle de cohérence, normalisation, mapping du plan comptable, agrégation - une base financière exploitable.</p><div class="uc-fhead__hint">Source en PDF ? Ajout d'une brique OCR / Document AI en amont.</div></div><div class="uc-fout"><span class="uc-fout__lab">Sorties</span><div class="uc-outs" style="margin:0"><span class="uc-out">Compte de résultat normalisé (par ligne de compte)</span><span class="uc-out">Bilan normalisé & détaillé</span><span class="uc-out">Base financière pluriannuelle</span></div></div></div><div class="uc-fstep"><div class="uc-fhead s2"><div class="uc-fhead__top"><span class="uc-fhead__n">2</span><span class="uc-fhead__nat">Programme · Analytique</span></div><h3>Moteur de calcul / analytique</h3><p>Calcul automatisé des SIG et des indicateurs, et de leur évolution N / N-1 - exact et auditable. Sorties : les 4 familles de ratios.</p></div><div class="uc-fout"><span class="uc-fout__lab">Sorties - les ratios mesurés</span><div class="uc-rfam"><div class="uc-rcard uc-rcard--f1"><h4>CR, SIG & profitabilité</h4><div class="uc-rfam__sub">Soldes intermédiaires de gestion</div><div class="uc-rfam__pills"><span>Chiffre d'affaires</span><span>Marge de production</span><span>Valeur ajoutée</span><span>EBE (EBITDA)</span><span>REX (EBIT)</span><span>Résultat net</span><span>CAF</span></div><div class="uc-rfam__sub">Ratios de profitabilité</div><div class="uc-rfam__pills"><span>Taux de VA</span><span>Taux d'EBE</span><span>Taux de REX</span><span>Taux de résultat net</span><span>Poids charges de personnel</span><span>Poids impôts & taxes</span></div></div><div class="uc-rcard uc-rcard--f2"><h4>Structure, solvabilité & endettement</h4><div class="uc-rfam__sub">Structure & endettement</div><div class="uc-rfam__pills"><span>Autonomie financière</span><span>Taux d'endettement global</span><span>Gearing</span><span>Dette nette / CP</span><span>Capacité de remboursement (DFN / CAF)</span><span>Couverture des intérêts</span></div><div class="uc-rfam__sub">Équilibre fonctionnel</div><div class="uc-rfam__pills"><span>FRNG</span><span>BFR</span><span>Trésorerie nette</span></div></div><div class="uc-rcard uc-rcard--f3"><h4>Liquidité, BFR & cycle d'exploitation</h4><div class="uc-rfam__sub">Liquidité</div><div class="uc-rfam__pills"><span>Liquidité générale</span><span>Liquidité réduite</span><span>Liquidité immédiate</span></div><div class="uc-rfam__sub">BFR & délais</div><div class="uc-rfam__pills"><span>BFR (€)</span><span>BFR en jours de CA</span><span>DSO clients</span><span>DIO stocks</span><span>DPO fournisseurs</span><span>Cycle de conversion de trésorerie</span></div></div><div class="uc-rcard uc-rcard--f4"><h4>Flux & ratios de trésorerie</h4><div class="uc-rfam__sub">Flux nets</div><div class="uc-rfam__pills"><span>Flux d'exploitation (A)</span><span>Flux d'investissement (B)</span><span>Flux de financement (C)</span><span>Variation de trésorerie</span><span>Trésorerie de clôture</span></div><div class="uc-rfam__sub">Ratios de flux</div><div class="uc-rfam__pills"><span>Free Cash-Flow (A+B)</span><span>Couverture des investissements</span><span>Taux de conversion (A / RN)</span><span>Cash-flow d'exploitation / CA</span><span>Levier (dette nette / CAF)</span></div></div></div></div></div><div class="uc-fstep"><div class="uc-fhead s3"><div class="uc-fhead__top"><span class="uc-fhead__n">3</span><span class="uc-fhead__nat">IA générative</span></div><h3>Interprétation & commentaire</h3><p>Lecture des données et des ratios : tendances, variations significatives, points forts, points de vigilance et anomalies - puis génération d'un commentaire financier structuré.</p></div><div class="uc-fout"><span class="uc-fout__lab">Sorties</span><div class="uc-outs" style="margin:0"><span class="uc-out">Commentaire financier structuré</span><span class="uc-out">Tendances & variations expliquées</span><span class="uc-out">Points forts / points de vigilance</span><span class="uc-out">Synthèse dirigeant</span></div></div></div><div class="uc-fstep"><div class="uc-fhead s4"><div class="uc-fhead__top"><span class="uc-fhead__n">4</span><span class="uc-fhead__nat">RAG · Benchmark</span></div><h3>Données externes & positionnement</h3><p>Enrichissement avec des données sectorielles et des comparables externes : ratios de référence, données Banque de France / INSEE et autres bases financières.</p></div><div class="uc-fout"><span class="uc-fout__lab">Sorties</span><div class="uc-outs" style="margin:0"><span class="uc-out">Positionnement sectoriel (écarts aux références)</span><span class="uc-out">Comparables & ratios de secteur</span><span class="uc-out">Sources citées (Banque de France, INSEE)</span></div></div></div><div class="uc-fstep"><div class="uc-fhead s5"><div class="uc-fhead__top"><span class="uc-fhead__n">5</span><span class="uc-fhead__nat">Machine Learning</span></div><h3>Détection d'anomalies (optionnel)</h3><p>Quand le volume et l'historique le permettent : détection de comportements atypiques, ruptures de tendance, écritures inhabituelles et signaux faibles.</p></div><div class="uc-fout"><span class="uc-fout__lab">Sorties</span><div class="uc-outs" style="margin:0"><span class="uc-out">Ruptures de tendance & comportements atypiques</span><span class="uc-out">Écritures inhabituelles / signaux faibles</span><span class="uc-out">Score d'anomalie (si données suffisantes)</span></div></div></div></div><div class="uc-callout"><p><b>L'objet :</b> analyser le compte de résultat et le bilan sur 3 à 5 ans pour comprendre l'histoire de l'entreprise à travers ses résultats passés, et en tirer des axes stratégiques d'amélioration ou de redressement. Les chiffres sont produits par un calcul déterministe et auditable ; l'IA générative interprète et rédige, le contrôle de gestion fiabilise, le dirigeant décide.</p></div></div>
+    </div>
+  </section><section id="visuel-pilotage-recurrent" class="section section-white article">
+    <div class="container-lg">
+      <div class="section-head"><span class="eyebrow">Cas d'usage · Finance / Contrôle de gestion</span><h2 class="section-title">Piloter la performance au fil de l'eau</h2>
+        <p class="section-subtitle">Un cycle mensuel ou trimestriel qui actualise les indicateurs opérationnels et financiers, détecte les écarts et produit le reporting - automatiquement.</p></div>
+      <div class="uc-visual"><div class="uc-meta"><span>Pour : dirigeant & contrôle de gestion</span><span>Fréquence : mensuelle / trimestrielle</span><span>But : piloter au fil de l'eau</span></div><div class="uc-src"><span class="uc-src__lab">Sources en entrée</span><div><span>Compta / FEC de la période</span><span>Ventes & achats (ERP)</span><span>Budget / objectifs</span></div></div><h3 class="uc-subh">Le cycle de pilotage en 5 étapes</h3><div class="uc-fpipe"><div class="uc-fstep"><div class="uc-fhead s1"><div class="uc-fhead__top"><span class="uc-fhead__n">1</span><span class="uc-fhead__nat">Programme · ETL</span></div><h3>Collecte & rafraîchissement</h3><p>À chaque période, extraction automatique des données (compta / FEC, ventes et achats), contrôle de cohérence et mise à jour de la base - sans ressaisie.</p><div class="uc-fhead__hint">Cadence mensuelle ou trimestrielle, alignée sur la clôture.</div></div><div class="uc-fout"><span class="uc-fout__lab">Sorties</span><div class="uc-outs" style="margin:0"><span class="uc-out">Données de la période consolidées</span><span class="uc-out">Base actualisée (historisée)</span></div></div></div><div class="uc-fstep"><div class="uc-fhead s2"><div class="uc-fhead__top"><span class="uc-fhead__n">2</span><span class="uc-fhead__nat">Programme · Analytique</span></div><h3>Actualisation des indicateurs</h3><p>Recalcul des indicateurs de la période et de leurs écarts (vs budget, vs N-1) - exact et auditable. Sorties : les 2 familles d'indicateurs.</p></div><div class="uc-fout"><span class="uc-fout__lab">Sorties - les indicateurs de pilotage</span><div class="uc-rfam"><div class="uc-rcard uc-rcard--f1"><h4>Performance opérationnelle</h4><div class="uc-rfam__sub">Activité & marge</div><div class="uc-rfam__pills"><span>CA par axe (produit / client / zone)</span><span>Marge</span><span>Taux de marge</span><span>Volume vs prix</span></div><div class="uc-rfam__sub">Coûts & rentabilité</div><div class="uc-rfam__pills"><span>Structure de coûts</span><span>Rentabilité par activité</span><span>Résultat de la période</span></div><div class="uc-rfam__sub">Écarts</div><div class="uc-rfam__pills"><span>vs budget</span><span>vs N-1</span><span>vs cumulé N-1</span></div></div><div class="uc-rcard uc-rcard--f2"><h4>Santé financière</h4><div class="uc-rfam__sub">BFR & cycle</div><div class="uc-rfam__pills"><span>BFR (€ et jours de CA)</span><span>DSO clients</span><span>DIO stocks</span><span>DPO fournisseurs</span><span>Cycle de conversion</span></div><div class="uc-rfam__sub">Trésorerie & flux</div><div class="uc-rfam__pills"><span>Flux d'exploitation</span><span>Variation de trésorerie</span><span>Trésorerie disponible</span></div><div class="uc-rfam__sub">Ratios de vigilance</div><div class="uc-rfam__pills"><span>Couverture des investissements</span><span>Free Cash-Flow</span><span>Taux de conversion</span><span>Levier (dette nette / CAF)</span></div></div></div></div></div><div class="uc-fstep"><div class="uc-fhead s3"><div class="uc-fhead__top"><span class="uc-fhead__n">3</span><span class="uc-fhead__nat">Programme · Détection</span></div><h3>Écarts & anomalies</h3><p>Comparaison aux seuils et au budget : détection des écarts significatifs et des anomalies, hiérarchisés par enjeu - pour concentrer l'attention.</p></div><div class="uc-fout"><span class="uc-fout__lab">Sorties</span><div class="uc-outs" style="margin:0"><span class="uc-out">Écarts significatifs priorisés</span><span class="uc-out">Alertes de seuil</span><span class="uc-out">Anomalies signalées</span></div></div></div><div class="uc-fstep"><div class="uc-fhead s4"><div class="uc-fhead__top"><span class="uc-fhead__n">4</span><span class="uc-fhead__nat">IA générative</span></div><h3>Commentaire & reporting</h3><p>Rédaction du commentaire d'écarts et du narratif de la période : ce qui bouge, pourquoi, et les points d'attention - un premier reporting à valider.</p></div><div class="uc-fout"><span class="uc-fout__lab">Sorties</span><div class="uc-outs" style="margin:0"><span class="uc-out">Commentaire d'écarts</span><span class="uc-out">Reporting narratif de la période</span><span class="uc-out">Synthèse dirigeant</span></div></div></div><div class="uc-fstep"><div class="uc-fhead s5"><div class="uc-fhead__top"><span class="uc-fhead__n">5</span><span class="uc-fhead__nat">Restitution</span></div><h3>Tableau de bord & décision</h3><p>Diffusion du tableau de bord périodique et du reporting aux décideurs ; les décisions et actions correctives alimentent la période suivante.</p></div><div class="uc-fout"><span class="uc-fout__lab">Sorties</span><div class="uc-outs" style="margin:0"><span class="uc-out">Tableau de bord périodique</span><span class="uc-out">Reporting diffusé</span><span class="uc-out">Plan d'actions correctives</span></div></div></div></div><div class="uc-loop"><span class="uc-loop__ic">↺</span><span><b>Une boucle, pas un one-shot.</b> Chaque période fermée enrichit l'historique : les écarts et décisions d'aujourd'hui deviennent la base de comparaison de demain.</span></div><div class="uc-callout"><p><b>L'objet :</b> un pilotage récurrent des performances opérationnelles (CA, marge, coûts, rentabilité) et financières (BFR, trésorerie). L'IA automatise la production du reporting et la détection d'écarts ; le contrôle de gestion fiabilise, le dirigeant décide.</p></div></div>
+    </div>
+  </section>
+  <section class="section section-white">
+    <div class="container-lg">
+      <div class="section-head"><h2 class="section-title">Autres applications pour finance & gestion</h2><p class="section-subtitle">Des pistes complémentaires que nous instruisons lors du diagnostic.</p></div>
+      <div class="grid-3"><div class="card"><h3 class="card__title" style="font-size:var(--text-body)">Prévision de trésorerie</h3><p class="card__text">Anticiper les tensions et sécuriser les décisions.</p></div><div class="card"><h3 class="card__title" style="font-size:var(--text-body)">Détection d'anomalies</h3><p class="card__text">Repérer les écritures ou dépenses atypiques.</p></div><div class="card"><h3 class="card__title" style="font-size:var(--text-body)">Copilote financier</h3><p class="card__text">Interroger la comptabilité et les résultats en langage naturel.</p></div></div>
+    </div>
+  </section>
+  <section class="section section-alt">
+    <div class="container-lg">
+      <div class="section-head"><h2 class="section-title">Découvrir nos autres applications IA</h2></div>
+      <div class="metier-grid"><a class="metier-card" href="direction-generale.html"><span class="metier-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20V8l9-4 9 4v12"/><path d="M9 20v-6h6v6"/></svg></span><span class="metier-card__name">Direction générale</span><span class="metier-card__count">Voir le service</span></a><a class="metier-card" href="achats.html"><span class="metier-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14l-1.2 10.5a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3L5 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span><span class="metier-card__name">Achats</span><span class="metier-card__count">Voir le service</span></a><a class="metier-card" href="administration-des-ventes.html"><span class="metier-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10l4 4v12H5z"/><path d="M15 4v4h4"/><path d="M8 13h8M8 16h5"/></svg></span><span class="metier-card__name">Administration des ventes</span><span class="metier-card__count">Voir le service</span></a></div>
+    </div>
+  </section>
+  <section class="section sec--white a6" id="commencer">
+    <div class="container-lg">
+      <div class="section-head">
+        <span class="eyebrow">Passer à l'action</span>
+        <h2 class="sec-title">Commencez sans attendre,<br><span class="sec-title__l2">et engagez une démarche de progrès.</span></h2>
+        <div class="a2__cta"><a class="btn-primary" href="../contact.html">Nous contacter</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer-main">
+  <div class="container-lg">
+    <div class="footer-main__top">
+      <div>
+        <span class="logo logo--dark"><svg class="logo__icon" width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="28" width="11" height="18" rx="2" fill="#0e6a95"/><rect x="18" y="16" width="11" height="30" rx="2" fill="#0099c8"/><rect x="34" y="4" width="11" height="42" rx="2" fill="#00b9e5"/></svg><span><span class="logo__word"><span class="a">A</span><span class="rest">rt</span><span class="i">&#305;</span><span class="rest">s&nbsp;Conseil</span></span></span></span>
+        <p class="footer-main__intro">Conseil en transformation, performance, Data et Intelligence Artificielle au service des dirigeants d'entreprise.</p>
+      </div>
+      <div>
+        <p class="footer-main__title">Expertises</p>
+        <a class="footer-main__link" href="../designer-process-IA.html">Types d'IA</a>
+        <a class="footer-main__link" href="../problematiques-metiers.html">Agents IA</a>
+        <a class="footer-main__link" href="../data-ia.html">Data &amp; IA</a>
+      </div>
+      <div>
+        <p class="footer-main__title">Applications</p>
+        <a class="footer-main__link" href="../applications.html">Toutes les applications</a>
+        <a class="footer-main__link" href="commercial.html">Commercial</a>
+        <a class="footer-main__link" href="finance-gestion.html">Finance</a>
+        <a class="footer-main__link" href="production.html">Production</a>
+        <a class="footer-main__link" href="../ressources.html">Ressources &amp; guides</a>
+      </div>
+      <div>
+        <p class="footer-main__title">Artis Conseil</p>
+        <a class="footer-main__link" href="../a-propos.html">À propos</a>
+        <a class="footer-main__link" href="../maturite-ia.html">Méthodologie</a>
+        <a class="footer-main__link" href="../contact.html">Contact</a>
+        <a class="footer-main__link" href="../mentions-legales.html">Mentions légales</a>
+        <a class="footer-main__link" href="../politique-confidentialite.html">Confidentialité (RGPD)</a>
+      </div>
+    </div>
+    <div class="footer-main__bottom">
+      <span>&copy; <span data-year>2026</span> Artis Conseil - Tous droits réservés.</span>
+      <span>Stratégie · Performance · IA - Lyon &amp; à distance</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

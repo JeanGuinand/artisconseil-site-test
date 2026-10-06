@@ -3,172 +3,373 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Artis Conseil — Conseil · Transformation · Intelligence Artificielle</title>
-<meta name="description" content="Artis Conseil accompagne les dirigeants de PME et ETI dans leurs projets de transformation, performance, Data et Intelligence Artificielle. Nouveau site en cours de développement.">
+<title>Artis Conseil - Conseil IA &amp; transformation pour PME et ETI</title>
+<meta name="description" content="Conseil en transformation, performance, Data et IA pour dirigeants d'entreprise. Du diagnostic au déploiement de cas d&#x27;usage concrets et mesurables.">
+<link rel="canonical" href="https://www.artisconseil.com/">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#040b18">
-<style>
-  * { box-sizing: border-box; }
-  html, body { margin: 0; min-height: 100%; }
-  body {
-    min-height: 100vh;
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    background:
-      radial-gradient(circle at 80% 20%, rgba(0,153,200,.16), transparent 35%),
-      radial-gradient(circle at 15% 80%, rgba(14,106,149,.14), transparent 32%),
-      linear-gradient(135deg, #040b18 0%, #07172a 55%, #0b2238 100%);
-    color: #fff;
-  }
-  .page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 42px clamp(24px, 6vw, 90px) 30px;
-  }
-  .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    width: fit-content;
-  }
-  .logo-icon { width: 38px; height: 38px; flex: 0 0 auto; }
-  .brand-name {
-    font-size: 25px;
-    font-weight: 600;
-    letter-spacing: -.5px;
-  }
-  .main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    padding: 70px 0;
-  }
-  .content { max-width: 1200px; }
-  .eyebrow {
-    display: inline-block;
-    color: #62d8f5;
-    text-transform: uppercase;
-    letter-spacing: .16em;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 25px;
-  }
-  h1 {
-    margin: 0;
-    max-width: 1200px;
-    font-size: clamp(42px, 6vw, 76px);
-    line-height: 1.04;
-    letter-spacing: -.045em;
-    font-weight: 650;
-  }
-  .accent { color: #43c9ec; }
-  .lead {
-    margin: 30px 0 0;
-    max-width: 1200px;
-    color: #c8d5e3;
-    font-size: clamp(18px, 2vw, 22px);
-    line-height: 1.65;
-  }
-  .status {
-    margin-top: 40px;
-    display: inline-flex;
-    align-items: center;
-    gap: 11px;
-    padding: 12px 18px;
-    border: 1px solid rgba(255,255,255,.16);
-    border-radius: 999px;
-    background: rgba(255,255,255,.055);
-    color: #eaf5fa;
-    font-size: 18px;
-  }
-  .status a {
-    color: #62d8f5;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .dot {
-    width: 9px; height: 9px; border-radius: 50%;
-    background: #43c9ec;
-    box-shadow: 0 0 16px rgba(67,201,236,.8);
-  }
- .bullet-line {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: #43c9ec;
-    border-radius: 2px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-  .contact {
-    margin-top: 42px;
-    padding-top: 28px;
-    border-top: 1px solid rgba(255,255,255,.12);
-    max-width: 760px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 28px;
-    color: #9fb3c7;
-    font-size: 15px;
-  }
-  .contact a { color: #fff; text-decoration: none; }
-  .contact a:hover { text-decoration: underline; }
-  footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px 24px;
-    color: #70869b;
-    font-size: 13px;
-  }
-  @media (max-width: 640px) {
-    .page { padding-top: 28px; }
-    .main { padding: 55px 0; }
-    h1 { font-size: 43px; }
-    .lead { font-size: 18px; }
-  }
-</style>
+<meta name="theme-color" content="#07111f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Artis Conseil">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Artis Conseil - Conseil IA &amp; transformation pour PME et ETI">
+<meta property="og:description" content="Conseil en transformation, performance, Data et IA pour dirigeants d'entreprise. Du diagnostic au déploiement de cas d&#x27;usage concrets et mesurables.">
+<meta property="og:url" content="https://www.artisconseil.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Artis Conseil", "description": "Conseil en transformation, performance, Data et Intelligence Artificielle pour dirigeants d'entreprise.", "url": "https://www.artisconseil.com", "areaServed": "France", "knowsAbout": ["Conseil IA", "Diagnostic IA", "Transformation digitale", "Data", "Agents IA", "Automatisation des processus"], "slogan": "Stratégie · Performance · IA", "address": {"@type": "PostalAddress", "addressLocality": "Lyon", "addressCountry": "FR"}, "logo": "https://www.artisconseil.com/assets/img/favicon.svg"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Artis Conseil", "url": "https://www.artisconseil.com", "inLanguage": "fr-FR"}</script>
 </head>
 <body>
-<div class="page">
-  <header>
-    <div class="brand" aria-label="Artis Conseil">
-      <svg class="logo-icon" viewBox="0 0 48 48" aria-hidden="true">
-        <rect x="2" y="28" width="11" height="18" rx="2" fill="#123452"/>
-        <rect x="18" y="16" width="11" height="30" rx="2" fill="#0e6a95"/>
-        <rect x="34" y="4" width="11" height="42" rx="2" fill="#00b9e5"/>
-      </svg>
-      <span class="brand-name">Artis Conseil</span>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="header-main">
+  <a class="header-main__brand" href="index.html" aria-label="Artis Conseil - accueil"><span class="logo"><svg class="logo__icon" width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="28" width="11" height="18" rx="2" fill="#0e6a95"/><rect x="18" y="16" width="11" height="30" rx="2" fill="#0099c8"/><rect x="34" y="4" width="11" height="42" rx="2" fill="#00b9e5"/></svg><span><span class="logo__word"><span class="a">A</span><span class="rest">rt</span><span class="i">&#305;</span><span class="rest">s&nbsp;Conseil</span></span></span></span></a>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+  <nav class="header-main__nav" id="site-nav" aria-label="Navigation principale">
+    <div class="header-main__item has-caret">
+      <a class="header-main__link" href="index.html" aria-current="page">Services</a>
+      <div class="dropdown"><a class="dropdown__link" href="index.html">Accueil</a><a class="dropdown__link" href="index.html#parcours">Opportunités IA</a><a class="dropdown__link" href="index.html#shadow-ai">Constats en entreprise</a><a class="dropdown__link" href="index.html#trame">Notre proposition</a><a class="dropdown__link" href="index.html#distinction">Notre approche</a><a class="dropdown__link" href="index.html#commencer">Passer à l'action</a></div>
     </div>
-  </header>
-
-  <main class="main">
-    <section class="content">
-      <span class="eyebrow">Conseil · Transformation · Intelligence Artificielle</span>
-      <h1>Construisons aujourd'hui<br> <span class="accent">votre actif numérique de demain.</span></h1>
-      <p class="lead">
-        <strong>Artis Conseil accompagne les dirigeants de PME et d'ETI pour intégrer l'IA au cœur de leurs processus :</strong><br> 
-        <span class="bullet-line"></span>un cas d'usage identifié pour pour une mise en oeurvre rapide,<br>
-        <span class="bullet-line"></span>ou une trajectoire complète pour transformer l'entreprise.<br><br>
-
-        Dans les deux cas, nous construisons des solutions sur-mesure,<br> 
-        vous décidez sur la base d'un projet concrets et vous investissez dans un actif numérique.
-      </p>
-
-      <div class="status">
-        <span class="dot"></span>
-         <span>Nouveau site prochainement disponible</span>
-         <span class="separator">|</span>
-         <span>Pour échanger sur vos projets me contacter:</span>
-         <a href="mailto:contact@artisconseil.com">contact@artisconseil.com</a>
+    <div class="header-main__item has-caret">
+      <a class="header-main__link" href="maturite-ia.html">Méthodes</a>
+      <div class="dropdown dropdown--wide">
+        <a class="dropdown__link" href="co-construction-solution-ia.html">Notre méthode<span>Co-construire une solution IA avec votre entreprise</span></a>
+        <a class="dropdown__link" href="data-ia.html">DATA &amp; IA<span>Identifier, préparer et fiabiliser les données du projet</span></a>
+        <a class="dropdown__link" href="problematiques-metiers.html">Enjeux métier<span>Repérer les processus à améliorer et les cas d’usage prioritaires</span></a>
+        <a class="dropdown__link" href="designer-process-IA.html">Designer le processus IA<span>Concevoir l’intégration de l’IA dans les processus métier</span></a>
+        <a class="dropdown__link" href="maturite-ia.html">Maturité IA<span>Adapter le niveau d’IA aux besoins et aux capacités de l’entreprise</span></a>
+        <a class="dropdown__link" href="calculer-roi-projet-ia.html">Coûts &amp; ROI<span>Estimer les coûts, les gains attendus et le retour sur investissement</span></a>
       </div>
-    </section>
-  </main>
+    </div>
+    <div class="header-main__item has-caret">
+      <a class="header-main__link" href="applications.html">Applications</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="applications.html#par-service">Par service</a>
+        <a class="dropdown__link" href="applications.html#par-cas-usage">Par cas d’usage</a>
+        <a class="dropdown__link" href="applications.html#par-processus">Par processus</a>
+      </div>
+    </div>
+    <div class="header-main__item has-caret">
+      <a class="header-main__link" href="a-propos.html">À propos</a>
+      <div class="dropdown">
+        <a class="dropdown__link" href="a-propos.html#positionnement">Notre positionnement</a>
+        <a class="dropdown__link" href="a-propos.html#parti-pris">Notre parti pris</a>
+        <a class="dropdown__link" href="a-propos.html#modalites">Nos modalités</a>
+      </div>
+    </div>
+    <div class="header-main__item"><a class="header-main__link" href="ressources.html">Ressources</a></div>
+    <div class="header-main__actions">
+      <a class="btn-secondary" href="contact.html">Échanger sur vos enjeux</a>
+    </div>
+  </nav>
+</header>
+<main id="main">
+<section class="hero hero--a1">
+    <div class="container-lg">
+      <div class="a1__content">
+        <span class="eyebrow a1__eyebrow">Conseil · Transformation · Intelligence Artificielle</span>
+        <h1 class="a1__title">Construisons aujourd'hui,<br> <span class="a1__accent">votre actif numérique de demain.</span></h1>
+        <div class="a1__lead">
+          <p><strong>Artis Conseil accompagne les dirigeants d'entreprise pour intégrer l'IA au cœur de leurs processus :</strong></p>
+          <ul class="a1__list">
+            <li>un cas d'usage identifié pour une mise en œuvre rapide,</li>
+            <li>ou une trajectoire complète pour transformer l'entreprise.</li>
+          </ul>
+          <p>Dans les deux cas, nous construisons des solutions sur-mesure,<br> vous décidez sur la base d'un projet concret et vous investissez dans un actif numérique.</p>
+        </div>
+        <div class="a1__status">
+          <span class="a1__dot" aria-hidden="true"></span>
+          <span>Pour échanger sur vos projets, me contacter :</span>
+          <a href="mailto:contact@artisconseil.com">contact@artisconseil.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <span>© 2026 Artis Conseil  ·  Tous droits réservés.</span>
-    <span>Stratégie · Performance · IA  · Lyon &amp; à distance</span>
-  </footer>
+  <!-- ===== ACCUEIL · A2 Section 1 · Les deux parcours en parallèle (v2 02/10/2026) ===== -->
+  <section class="section sec--white a2" id="parcours">
+    <div class="container-lg">
+      <div class="section-head a2__intro">
+        <span class="eyebrow">Opportunités IA</span>
+        <h2 class="sec-title">L'IA ouvre de nouvelles possibilités pour votre entreprise,<br><span class="sec-title__l2">mais par où commencer&nbsp;?</span></h2>
+      </div>
+      <div class="a2__par">
+        <p class="a2__voice a2--c1 a2--r1">«&nbsp;J'ai un problème concret que je voudrais améliorer avec l'IA.&nbsp;»</p>
+        <div class="a2__box a2--c1 a2--r2">
+          <p class="a2__answers"><span class="a2__arrow" aria-hidden="true">↓</span>Nos 5 réponses</p>
+          <ol class="a2__rows">
+            <li class="a2__row"><span class="a2__num">1</span><div><p class="a2__quote">«&nbsp;Je perds trop de temps sur des tâches administratives répétitives.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Ce qu'il cherche à améliorer</span>Emails, saisies, comptes rendus, documents, classement, reporting</p><p class="a2__line"><span class="a2__lbl">Ce que l'IA peut apporter</span>Lecture et génération de documents, extraction de données, comptes rendus automatiques, pré-remplissage, workflows</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p1" data-label="Je perds trop de temps sur des tâches administratives répétitives." data-hint="Lecture et génération de documents, extraction de données, comptes rendus automatiques, pré-remplissage, workflows"><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+            <li class="a2__row"><span class="a2__num">2</span><div><p class="a2__quote">«&nbsp;J'ai l'information quelque part, mais je ne la retrouve pas.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Ce qu'il cherche à améliorer</span>Documents, procédures, dossiers clients, devis passés, contrats, connaissances des salariés</p><p class="a2__line"><span class="a2__lbl">Ce que l'IA peut apporter</span>Recherche intelligente, RAG, assistant documentaire, base de connaissances, interrogation en langage naturel</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p1" data-label="J'ai l'information quelque part, mais je ne la retrouve pas." data-hint="Recherche intelligente, RAG, assistant documentaire, base de connaissances, interrogation en langage naturel"><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+            <li class="a2__row"><span class="a2__num">3</span><div><p class="a2__quote">«&nbsp;On a plein de données, mais je n'arrive pas à savoir ce qui se passe vraiment.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Ce qu'il cherche à améliorer</span>CA, marges, coûts, trésorerie, stocks, production, commercial</p><p class="a2__line"><span class="a2__lbl">Ce que l'IA peut apporter</span>Consolidation des données, analyse automatique, détection d'anomalies, explications, alertes et aide au pilotage</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p1" data-label="On a plein de données, mais je n'arrive pas à savoir ce qui se passe vraiment." data-hint="Consolidation des données, analyse automatique, détection d'anomalies, explications, alertes et aide au pilotage"><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+            <li class="a2__row"><span class="a2__num">4</span><div><p class="a2__quote">«&nbsp;On passe trop de temps à faire des devis, répondre aux clients et relancer.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Ce qu'il cherche à améliorer</span>Avant-vente, devis, réponses techniques, CRM, relances, SAV</p><p class="a2__line"><span class="a2__lbl">Ce que l'IA peut apporter</span>Préparation de devis, qualification des demandes, réponses assistées, analyse CRM, relances et priorisation commerciale</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p1" data-label="On passe trop de temps à faire des devis, répondre aux clients et relancer." data-hint="Préparation de devis, qualification des demandes, réponses assistées, analyse CRM, relances et priorisation commerciale"><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+            <li class="a2__row"><span class="a2__num">5</span><div><p class="a2__quote">«&nbsp;Trop de choses dépendent de quelques personnes qui savent comment faire.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Ce qu'il cherche à améliorer</span>Savoir-faire métier, méthodes, règles implicites, formation, transmission</p><p class="a2__line"><span class="a2__lbl">Ce que l'IA peut apporter</span>Capitalisation du savoir-faire, assistants métier, procédures dynamiques, aide à la décision et accompagnement des nouveaux salariés</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p1" data-label="Trop de choses dépendent de quelques personnes qui savent comment faire." data-hint="Capitalisation du savoir-faire, assistants métier, procédures dynamiques, aide à la décision et accompagnement des nouveaux salariés"><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+        </ol></div>
+        <div class="a2__cta a2--c1 a2--r3"><a class="btn-primary" data-diag-cta href="contact.html">Présenter mon besoin</a></div>
+
+        <p class="a2__voice a2__voice--t a2--c2 a2--r1">«&nbsp;Mon entreprise fonctionne aujourd'hui comme cela. Comment pourrait-elle fonctionner demain avec l'IA&nbsp;?&nbsp;»</p>
+        <div class="a2__box a2--c2 a2--r2">
+          <p class="a2__answers"><span class="a2__arrow" aria-hidden="true">↓</span>Nos 5 réponses</p>
+          <ol class="a2__rows">
+            <li class="a2__row"><span class="a2__num">1</span><div><p class="a2__quote">«&nbsp;Je veux une entreprise beaucoup plus pilotée par la donnée.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Transformation recherchée</span>Connecter ERP, CRM, comptabilité, production, achats, stocks et données commerciales pour disposer d'une vision commune et permettre à l'IA d'analyser, alerter, expliquer et anticiper.</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p2" data-label="Je veux une entreprise beaucoup plus pilotée par la donnée." data-hint="Connecter ERP, CRM, comptabilité, production, achats, stocks et données commerciales pour disposer d'une vision commune et permettre à l'IA d'analyser, alerter, expliquer et anticiper."><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+            <li class="a2__row"><span class="a2__num">2</span><div><p class="a2__quote">«&nbsp;Je veux augmenter fortement notre productivité sans augmenter les effectifs au même rythme.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Transformation recherchée</span>Repenser transversalement les processus : automatisation administrative, assistants métiers, traitement documentaire, commercial, ADV, achats, finance, RH. L'objectif n'est plus d'automatiser une tâche, mais de <strong>redessiner les processus de l'entreprise</strong>.</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p2" data-label="Je veux augmenter fortement notre productivité sans augmenter les effectifs au même rythme." data-hint="Repenser transversalement les processus : automatisation administrative, assistants métiers, traitement documentaire, commercial, ADV, achats, finance, RH. L'objectif n'est plus d'automatiser une tâche, mais de redessiner les processus de l'entreprise."><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+            <li class="a2__row"><span class="a2__num">3</span><div><p class="a2__quote">«&nbsp;Je veux que notre savoir-faire devienne un actif de l'entreprise et ne soit plus seulement dans la tête de quelques personnes.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Transformation recherchée</span>Structurer documents, historiques, règles métier, méthodes, devis, incidents et retours d'expérience afin de créer une <strong>mémoire d'entreprise exploitable par des assistants IA</strong> dans plusieurs métiers.</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p2" data-label="Je veux que notre savoir-faire devienne un actif de l'entreprise et ne soit plus seulement dans la tête de quelques personnes." data-hint="Structurer documents, historiques, règles métier, méthodes, devis, incidents et retours d'expérience afin de créer une mémoire d'entreprise exploitable par des assistants IA dans plusieurs métiers."><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+            <li class="a2__row"><span class="a2__num">4</span><div><p class="a2__quote">«&nbsp;Je veux transformer notre manière de vendre et de servir nos clients.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Transformation recherchée</span>Relier marketing, CRM, devis, commandes, production et SAV pour créer un parcours client beaucoup plus intelligent : qualification automatique, personnalisation, recommandations, devis assistés, suivi proactif, anticipation des besoins.</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p2" data-label="Je veux transformer notre manière de vendre et de servir nos clients." data-hint="Relier marketing, CRM, devis, commandes, production et SAV pour créer un parcours client beaucoup plus intelligent : qualification automatique, personnalisation, recommandations, devis assistés, suivi proactif, anticipation des besoins."><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+            <li class="a2__row"><span class="a2__num">5</span><div><p class="a2__quote">«&nbsp;Je veux construire une entreprise dans laquelle l'IA devient progressivement une couche de fonctionnement commune.&nbsp;»</p><p class="a2__line"><span class="a2__lbl">Transformation recherchée</span>Mettre en place un socle Data + IA partagé : données gouvernées, sécurité, droits d'accès, modèles IA, API, assistants et agents métiers. Chaque fonction peut ensuite construire ses usages sur <strong>une architecture commune plutôt que multiplier les outils isolés</strong>.</p><button type="button" class="a2__check" aria-pressed="false" data-diag="p2" data-label="Je veux construire une entreprise dans laquelle l'IA devient progressivement une couche de fonctionnement commune." data-hint="Mettre en place un socle Data + IA partagé : données gouvernées, sécurité, droits d'accès, modèles IA, API, assistants et agents métiers. Chaque fonction peut ensuite construire ses usages sur une architecture commune plutôt que multiplier les outils isolés."><span class="a2__tick" aria-hidden="true"></span>Je me reconnais dans cette situation</button></div></li>
+        </ol></div>
+        <div class="a2__cta a2--c2 a2--r3"><a class="btn-secondary" data-diag-cta href="contact.html">Échanger sur ma stratégie IA</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACCUEIL · A3 Section 2 · Le constat : Shadow AI (argumentaire 02/10/2026) ===== -->
+  <section class="section sec--dark a3" id="shadow-ai">
+    <div class="container-lg">
+      <div class="a3__head">
+        <span class="eyebrow a3__eyebrow">Constats en entreprise</span>
+        <h2 class="sec-title">L'IA est déjà installée dans votre entreprise.<br><span class="sec-title__l2">En avez-vous le contrôle&nbsp;?</span></h2>
+        <p class="a3__intro">Le <strong>Shadow AI</strong>, c'est l'usage de l'IA par vos équipes, en dehors de tout cadre défini par l'entreprise. Il peut engendrer des risques aux conséquences importantes. Combien de ces six situations reconnaissez-vous chez vous&nbsp;?</p>
+      </div>
+      <div class="a3__grid">
+        <article class="a3__card a3--crit">
+          <div class="a3__top"><span class="a3__rank">01</span><span class="a3__lvl"><span class="a3__meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>Critique</span></div>
+          <h3 class="a3__title">Fuite de données confidentielles ou stratégiques</h3>
+          <p class="a3__ex">Un salarié copie dans une IA publique un contrat, une marge client, un fichier comptable, un devis ou des données techniques.</p>
+          <p class="a3__imp"><span>Impact potentiel</span>Perte de confidentialité, secret des affaires, avantage concurrentiel.</p>
+          <button type="button" class="a3__check" aria-pressed="false" data-diag="risk" data-label="Fuite de données confidentielles ou stratégiques" data-hint="impact critique"><span class="a3__box" aria-hidden="true"></span>Je reconnais cette situation</button>
+        </article>
+        <article class="a3__card a3--crit">
+          <div class="a3__top"><span class="a3__rank">02</span><span class="a3__lvl"><span class="a3__meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>Critique</span></div>
+          <h3 class="a3__title">Exposition de données personnelles, non-conformité RGPD</h3>
+          <p class="a3__ex">Fichier clients, CV, données RH, emails nominatifs ou coordonnées transmis à un service IA sans cadre approprié.</p>
+          <p class="a3__imp"><span>Impact potentiel</span>Responsabilité juridique, notification éventuelle, sanctions et réputation.</p>
+          <button type="button" class="a3__check" aria-pressed="false" data-diag="risk" data-label="Exposition de données personnelles, non-conformité RGPD" data-hint="impact critique"><span class="a3__box" aria-hidden="true"></span>Je reconnais cette situation</button>
+        </article>
+        <article class="a3__card a3--high">
+          <div class="a3__top"><span class="a3__rank">03</span><span class="a3__lvl"><span class="a3__meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span>Très élevé</span></div>
+          <h3 class="a3__title">Décisions ou productions erronées fondées sur l'IA</h3>
+          <p class="a3__ex">Un collaborateur utilise une réponse incorrecte ou inventée pour un calcul, une analyse, un contrat, un devis ou une réponse client, sans vérification.</p>
+          <p class="a3__imp"><span>Impact potentiel</span>Erreur commerciale, financière, technique ou juridique.</p>
+          <button type="button" class="a3__check" aria-pressed="false" data-diag="risk" data-label="Décisions ou productions erronées fondées sur l'IA" data-hint="impact très élevé"><span class="a3__box" aria-hidden="true"></span>Je reconnais cette situation</button>
+        </article>
+        <article class="a3__card a3--high">
+          <div class="a3__top"><span class="a3__rank">04</span><span class="a3__lvl"><span class="a3__meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span>Élevé</span></div>
+          <h3 class="a3__title">Perte de maîtrise du SI et multiplication des outils</h3>
+          <p class="a3__ex">Chaque service utilise ses propres comptes ChatGPT, Claude ou autres outils, parfois avec des extensions et applications tierces.</p>
+          <p class="a3__imp"><span>Impact potentiel</span>Aucune gouvernance des accès, des données, des coûts ou des usages.</p>
+          <button type="button" class="a3__check" aria-pressed="false" data-diag="risk" data-label="Perte de maîtrise du SI et multiplication des outils" data-hint="impact élevé"><span class="a3__box" aria-hidden="true"></span>Je reconnais cette situation</button>
+        </article>
+        <article class="a3__card a3--mid">
+          <div class="a3__top"><span class="a3__rank">05</span><span class="a3__lvl"><span class="a3__meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span>Significatif</span></div>
+          <h3 class="a3__title">Perte de maîtrise du savoir-faire de l'entreprise</h3>
+          <p class="a3__ex">Les collaborateurs développent leurs propres prompts, assistants et méthodes sans documentation ni partage. Un salarié part : son «&nbsp;système IA&nbsp;» part avec lui.</p>
+          <p class="a3__imp"><span>Impact potentiel</span>Dépendance individuelle et absence de capitalisation.</p>
+          <button type="button" class="a3__check" aria-pressed="false" data-diag="risk" data-label="Perte de maîtrise du savoir-faire de l'entreprise" data-hint="impact significatif"><span class="a3__box" aria-hidden="true"></span>Je reconnais cette situation</button>
+        </article>
+        <article class="a3__card a3--low">
+          <div class="a3__top"><span class="a3__rank">06</span><span class="a3__lvl"><span class="a3__meter" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span>Modéré</span></div>
+          <h3 class="a3__title">Coûts cachés et transformation désordonnée</h3>
+          <p class="a3__ex">Plusieurs équipes achètent des abonnements et automatisent localement les mêmes tâches sans architecture commune.</p>
+          <p class="a3__imp"><span>Impact potentiel</span>Doublons, solutions incompatibles et investissements difficiles à industrialiser.</p>
+          <button type="button" class="a3__check" aria-pressed="false" data-diag="risk" data-label="Coûts cachés et transformation désordonnée" data-hint="impact modéré"><span class="a3__box" aria-hidden="true"></span>Je reconnais cette situation</button>
+        </article>
+      </div>
+      <div class="a3__score" aria-live="polite" hidden>
+        <span class="a3__scoretag">Ajouté à votre autodiagnostic</span>
+        <p class="a3__msg">«&nbsp;Je souhaiterais que l'on sensibilise mes collaborateurs aux risques de l'IA pour mon entreprise.&nbsp;»</p>
+      </div>
+      <div class="a3__flip">
+        <div>
+          <span class="a3__fliptag">Le revers positif</span>
+          <p class="a3__fliptxt">Le Shadow AI est aussi le signe qu'un besoin existe déjà dans l'entreprise : ces usages fantômes révèlent les <strong>cas d'usage à plus forte valeur</strong> que vos équipes ont déjà commencé à expérimenter.</p>
+        </div>
+        <a class="btn-secondary btn-lg" data-diag-cta href="contact.html">Faire le point sur vos usages IA</a>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var sec=document.getElementById('shadow-ai'),sc=sec.querySelector('.a3__score');
+    sec.querySelectorAll('.a3__check').forEach(function(x){x.addEventListener('click',function(){
+      var on=x.getAttribute('aria-pressed')!=='true';x.setAttribute('aria-pressed',on);x.closest('.a3__card').classList.toggle('is-on',on);
+      var c=sec.querySelectorAll('.a3__check[aria-pressed="true"]').length;sc.hidden=c===0;sec.classList.toggle('a3--active',c>0);});});
+  })();
+  </script>
+
+  <!-- ===== ACCUEIL · A4 Section 3 · La trame des deux parcours en 4 cadres (v2 03/10/2026) ===== -->
+  <section class="section sec--white a4" id="trame">
+    <div class="container-lg">
+      <div class="section-head a4__head">
+        <span class="eyebrow">Notre proposition</span>
+        <h2 class="sec-title">Comment nous concevons les solutions IA,<br><span class="sec-title__l2">pour une intégration réussie dans votre organisation.</span></h2>
+      </div>
+      <p class="a4__offer">Nous proposons&nbsp;:</p>
+      <div class="a4__intro">
+        <div class="a4__pitch a4__pitch--p1"><div class="a4__pb"><span class="a4__pnum" aria-hidden="true">01</span><span class="a4__ptx"><span class="a4__pk">Parcours 1</span><span class="a4__pt">Cas d'usage</span></span></div><p>Un parcours sur un ou des cas d'usage identifiés, pour une mise en œuvre rapide.</p></div>
+        <div class="a4__pitch a4__pitch--p2"><div class="a4__pb"><span class="a4__pnum" aria-hidden="true">02</span><span class="a4__ptx"><span class="a4__pk">Parcours 2</span><span class="a4__pt">Transformation IA</span></span></div><p>Un parcours qui définit une trajectoire complète d'intégration de l'IA, pour transformer l'entreprise.</p></div>
+      </div>
+      <p class="a4__lead2"><strong>Une décision claire, à chaque fois.</strong> Aucun projet ne démarre sur une intuition. Chaque parcours se conclut par une décision explicite, prise par vous, à partir du diagnostic, de la faisabilité et du business case.</p>
+
+      <div class="a4__trames">
+        <p class="a4__coltag a4__coltag--p1">Parcours 1 · Cas d'usage</p>
+        <p class="a4__coltag a4__coltag--p2">Parcours 2 · Transformation IA</p>
+
+        <article class="a4__fl a4__fl--p1">
+          <header class="a4__flh"><span class="a4__fln">1</span><h3 class="a4__flt">Diagnostic</h3></header>
+          <div class="a4__ph"><span class="a4__pn">Phase 1</span>Étudier le cas d'usage</div>
+          <ol class="a4__tri">
+            <li class="a4__cd"><h4 class="a4__cdt">Comprendre</h4><ul><li>Problème</li><li>Processus</li><li>Irritants</li></ul></li>
+            <li class="a4__cd"><h4 class="a4__cdt">Concevoir</h4><ul><li>Données disponibles</li><li>Solutions possibles</li></ul></li>
+            <li class="a4__cd"><h4 class="a4__cdt">Décider</h4><ul><li>Faisabilité</li><li>ROI</li></ul></li>
+          </ol>
+          <div class="a4__liv"><span aria-hidden="true">◆</span>Business case chiffré</div>
+        </article>
+        <article class="a4__fl a4__fl--p2">
+          <header class="a4__flh"><span class="a4__fln">1</span><h3 class="a4__flt">Diagnostic</h3></header>
+          <div class="a4__ph"><span class="a4__pn">Phase 1</span>Diagnostic Stratégie IA</div>
+          <ol class="a4__tri">
+            <li class="a4__cd"><h4 class="a4__cdt">Orienter</h4><ul><li>Enjeux stratégiques</li><li>Ateliers métiers</li></ul></li>
+            <li class="a4__cd"><h4 class="a4__cdt">Architecturer</h4><ul><li>SI &amp; Data</li><li>Architecture cible</li></ul></li>
+            <li class="a4__cd"><h4 class="a4__cdt">Planifier</h4><ul><li>Séquençage</li><li>Chiffrage</li></ul></li>
+          </ol>
+          <div class="a4__liv"><span aria-hidden="true">◆</span>Business case &amp; feuille de route</div>
+        </article>
+
+        <article class="a4__fl a4__fl--p1">
+          <header class="a4__flh"><span class="a4__fln">2</span><h3 class="a4__flt">Restitution &amp; décision</h3></header>
+          <p class="a4__decl"><span class="dec go">GO</span> la solution est déployée.</p>
+          <p class="a4__decl"><span class="dec no">NO-GO</span> le cas n'est pas pertinent dans votre contexte actuel, et vous savez pourquoi.</p>
+        </article>
+        <article class="a4__fl a4__fl--p2">
+          <header class="a4__flh"><span class="a4__fln">2</span><h3 class="a4__flt">Restitution &amp; décision</h3></header>
+          <p class="a4__decl"><span class="dec go">GO total ou partiel</span> tout ou partie du programme est lancé.</p>
+          <p class="a4__decl"><span class="dec ap">À approfondir</span> certaines phases demandent une étude complémentaire.</p>
+          <p class="a4__decl"><span class="dec no">NO-GO</span> pas de déploiement dans le contexte actuel.</p>
+        </article>
+
+        <article class="a4__fl a4__fl--p1">
+          <header class="a4__flh"><span class="a4__fln">3</span><h3 class="a4__flt">Construire &amp; déployer</h3></header>
+          <div class="a4__ph"><span class="a4__pn">Phase 2</span>Développer &amp; intégrer la solution</div>
+          <div class="a4__step"><span class="a4__stitle">Besoin métier</span><span class="a4__kw">Processus, règles métier, utilisateurs, critères d'acceptation</span></div>
+          <div class="a4__step"><span class="a4__stitle">Solution technique</span><span class="a4__kw">Agent IA, assistant métier, RAG, programme Python, automatisation, connexions</span></div>
+          <div class="a4__step"><span class="a4__stitle">Test &amp; recette</span><span class="a4__kw">Tests techniques et utilisateurs, validation métier, documentation, formation</span></div>
+          <p class="a4__dur">Intégration : 3 à 10 jours selon le cas d'usage</p>
+          <div class="a4__liv"><span aria-hidden="true">◆</span>Solution validée &amp; déployée</div>
+        </article>
+        <article class="a4__fl a4__fl--p2">
+          <header class="a4__flh"><span class="a4__fln">3</span><h3 class="a4__flt">Construire &amp; déployer</h3></header>
+          <div class="a4__ph"><span class="a4__pn">Phase 2</span>Construire le socle data &amp; sécurité</div>
+          <div class="a4__step"><span class="a4__stitle">Data &amp; architecture</span><span class="a4__kw">Sources, connexions SI, nettoyage, structuration, architecture cible</span></div>
+          <div class="a4__step"><span class="a4__stitle">Sécurité, conformité &amp; gouvernance</span><span class="a4__kw">RGPD, droits d'accès, traçabilité, AI Act, validation humaine</span></div>
+          <div class="a4__liv"><span aria-hidden="true">◆</span>Socle data opérationnel</div>
+          <div class="a4__liv"><span aria-hidden="true">◆</span>Cadre de sécurité &amp; gouvernance</div>
+          <p class="a4__mini" aria-hidden="true">↓</p>
+          <div class="a4__ph"><span class="a4__pn">Phase 3</span>Développer, intégrer &amp; déployer</div>
+          <div class="a4__step"><span class="a4__stitle">Data</span><span class="a4__kw">Pipelines, connecteurs, bases de données, RAG</span></div>
+          <div class="a4__step"><span class="a4__stitle">Programmes, IA &amp; orchestration</span><span class="a4__kw">Python, agents IA, workflows, orchestration, supervision</span></div>
+          <div class="a4__step"><span class="a4__stitle">AMOA métier</span><span class="a4__kw">Processus cible, règles, rôles, recette, formation, conduite du changement</span></div>
+          <div class="a4__liv"><span aria-hidden="true">◆</span>Solution recettée &amp; mise en production</div>
+        </article>
+
+        <article class="a4__fl a4__fl--p1 a4__fl--end">
+          <header class="a4__flh"><span class="a4__fln">4</span><h3 class="a4__flt">Exploiter &amp; améliorer</h3></header>
+          <div class="a4__ph"><span class="a4__pn">Phase 3</span>Suivre &amp; améliorer</div>
+          <div class="a4__step"><span class="a4__stitle">Suivi métier</span><span class="a4__kw">Adoption, temps gagné, qualité, ROI réel, retours utilisateurs</span></div>
+          <div class="a4__step"><span class="a4__stitle">Maintenance &amp; évolution</span><span class="a4__kw">Corrections, mises à jour, sécurité, évolutions fonctionnelles</span></div>
+          <div class="a4__liv"><span aria-hidden="true">◆</span>Bilan &amp; décision d'évolution</div>
+        </article>
+        <article class="a4__fl a4__fl--p2 a4__fl--end">
+          <header class="a4__flh"><span class="a4__fln">4</span><h3 class="a4__flt">Exploiter &amp; améliorer</h3></header>
+          <div class="a4__ph"><span class="a4__pn">Phase 4</span>Exploiter &amp; améliorer</div>
+          <div class="a4__step"><span class="a4__stitle">Pilotage métier</span><span class="a4__kw">Adoption, KPI, gains réels, ROI réalisé vs prévu, nouveaux cas d'usage</span></div>
+          <div class="a4__step"><span class="a4__stitle">MCO data, applications &amp; IA</span><span class="a4__kw">Supervision, incidents, sécurité, coûts IA/API, réversibilité</span></div>
+          <div class="a4__liv"><span aria-hidden="true">◆</span>Comité de pilotage &amp; amélioration continue</div>
+        </article>
+      </div>
+
+      <p class="a4__nogo">Un NO-GO argumenté est un résultat utile, pas un échec : il vous évite un investissement mal placé.</p>
+      <div class="a4__cf"><a class="a4__btn" href="maturite-ia.html">Voir le détail des différentes phases <span aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- ===== ACCUEIL · A5 Section 4 · Ce qui nous distingue (03/10/2026) ===== -->
+  <section class="section sec--dark a5" id="distinction">
+    <div class="container-lg">
+      <div class="section-head">
+        <span class="eyebrow">Notre approche</span>
+        <h2 class="sec-title">Ce qui nous distingue,<br><span class="sec-title__l2">c'est notre connaissance de l'entreprise.</span></h2>
+      </div>
+      <div class="a5__grid"><article class="a5__card"><div class="a5__top"><span class="a5__num">01</span><span class="a5__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></span></div><h3 class="a5__title">Nous construisons des solutions sur-mesure</h3><p class="a5__intro">Les solutions sont développées avec :</p><ul class="a5__list"><li>vos données,</li><li>vos règles métier,</li><li>des agents IA personnalisés,</li><li>une orchestration adaptée,</li><li>des interfaces personnalisées.</li></ul><p class="a5__concl">L'IA s'intègre à votre processus de production et améliore la productivité grâce à sa capacité de traitement. Elle ne fixe jamais les règles et ne prend pas les décisions.</p></article><article class="a5__card"><div class="a5__top"><span class="a5__num">02</span><span class="a5__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></span></div><h3 class="a5__title">Vous décidez à partir d'éléments concrets</h3><p class="a5__intro">Chaque parcours aboutit à un projet structuré :</p><ul class="a5__list"><li>un diagnostic qui débouche sur une feuille de route et un chiffrage avant engagement définitif,</li><li>des livrables et une étape de validation à chaque phase du projet, jusqu'au déploiement,</li><li>un accompagnement au changement et une assistance.</li></ul><p class="a5__concl">Chaque étape est mise au point et validée avec la direction et les experts métiers.</p></article><article class="a5__card"><div class="a5__top"><span class="a5__num">03</span><span class="a5__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.5 6.5 19.5l1-6.3L3 8.9 9 8z"/></svg></span></div><h3 class="a5__title">Vous investissez dans un actif numérique</h3><p class="a5__intro">Le projet pérennise vos actifs :</p><ul class="a5__list"><li>en intégrant vos savoir-faire,</li><li>en vous donnant accès à de nouveaux savoir-faire, jusqu'ici hors de portée de votre entreprise,</li><li>en exploitant plus efficacement vos données pour accélérer vos prises de décision.</li></ul><p class="a5__concl">Les projets IA prolongent et développent l'expertise et la valeur de votre entreprise.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACCUEIL · A6 Section 5 · Commencez sans attendre (titre posé 03/10/2026, contenu à venir) ===== -->
+  <section class="section sec--white a6" id="commencer">
+    <div class="container-lg">
+      <div class="section-head">
+        <span class="eyebrow">Passer à l'action</span>
+        <h2 class="sec-title">Commencez sans attendre,<br><span class="sec-title__l2">et engagez une démarche de progrès.</span></h2>
+        <div class="a2__cta"><a class="btn-primary" href="contact.html">Nous contacter</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer-main">
+  <div class="container-lg">
+    <div class="footer-main__top">
+      <div>
+        <span class="logo logo--dark"><svg class="logo__icon" width="30" height="30" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="28" width="11" height="18" rx="2" fill="#0e6a95"/><rect x="18" y="16" width="11" height="30" rx="2" fill="#0099c8"/><rect x="34" y="4" width="11" height="42" rx="2" fill="#00b9e5"/></svg><span><span class="logo__word"><span class="a">A</span><span class="rest">rt</span><span class="i">&#305;</span><span class="rest">s&nbsp;Conseil</span></span></span></span>
+        <p class="footer-main__intro">Conseil en transformation, performance, Data et Intelligence Artificielle au service des dirigeants d'entreprise.</p>
+      </div>
+      <div>
+        <p class="footer-main__title">Expertises</p>
+        <a class="footer-main__link" href="designer-process-IA.html">Types d'IA</a>
+        <a class="footer-main__link" href="problematiques-metiers.html">Agents IA</a>
+        <a class="footer-main__link" href="data-ia.html">Data &amp; IA</a>
+      </div>
+      <div>
+        <p class="footer-main__title">Applications</p>
+        <a class="footer-main__link" href="applications.html">Toutes les applications</a>
+        <a class="footer-main__link" href="applications/commercial.html">Commercial</a>
+        <a class="footer-main__link" href="applications/finance-gestion.html">Finance &amp; gestion</a>
+        <a class="footer-main__link" href="applications/production.html">Production</a>
+        <a class="footer-main__link" href="ressources.html">Ressources &amp; guides</a>
+      </div>
+      <div>
+        <p class="footer-main__title">Artis Conseil</p>
+        <a class="footer-main__link" href="a-propos.html">À propos</a>
+        <a class="footer-main__link" href="maturite-ia.html">Méthodologie</a>
+        <a class="footer-main__link" href="contact.html">Contact</a>
+        <a class="footer-main__link" href="mentions-legales.html">Mentions légales</a>
+        <a class="footer-main__link" href="politique-confidentialite.html">Confidentialité (RGPD)</a>
+      </div>
+    </div>
+    <div class="footer-main__bottom">
+      <span>&copy; <span data-year>2026</span> Artis Conseil - Tous droits réservés.</span>
+      <span>Stratégie · Performance · IA - Lyon &amp; à distance</span>
+    </div>
+  </div>
+</footer>
+<!-- ===== Autodiagnostic : barre flottante + récapitulatif avant envoi ===== -->
+<div class="diag-bar" id="diagBar" hidden>
+  <span class="diag-bar__txt" id="diagCount">Votre autodiagnostic IA est prêt</span>
+  <button type="button" class="diag-bar__btn" id="diagOpen">Voir et envoyer mon autodiagnostic</button>
 </div>
+<div class="diag-modal" id="diagModal" hidden role="dialog" aria-modal="true" aria-labelledby="diagTitle">
+  <div class="diag-modal__panel">
+    <button type="button" class="diag-modal__close" id="diagClose" aria-label="Fermer">×</button>
+    <span class="eyebrow">Votre autodiagnostic IA</span>
+    <h2 class="diag-modal__title" id="diagTitle">Voici le message qui sera envoyé</h2>
+    <p class="diag-modal__help">Relisez-le et complétez-le librement avant l'envoi. Rien n'est transmis tant que vous n'avez pas cliqué sur l'un des deux boutons.</p>
+    <textarea class="diag-modal__text" id="diagText" rows="16"></textarea>
+    <div class="diag-modal__actions">
+      <button type="button" class="btn-primary" id="diagMail">Ouvrir ma messagerie</button>
+      <button type="button" class="btn-outline" id="diagForm">Passer par le formulaire de contact</button>
+    </div>
+  </div>
+</div>
+<script src="assets/js/autodiag.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
