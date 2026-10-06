@@ -73,7 +73,10 @@
         if (!msg) return;
         msg.hidden = false;
         msg.textContent = text;
-        msg.style.color = ok ? '' : 'var(--color-error-txt)';
+        msg.style.color = ok ? 'var(--color-success-txt)' : 'var(--color-error-txt)';
+        msg.style.borderLeftColor = msg.style.color;
+        msg.style.background = ok ? 'rgba(110,231,160,.12)' : 'rgba(252,165,165,.12)';
+        if (msg.scrollIntoView) msg.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
       };
       fetch(form.action, {
         method: 'POST',
